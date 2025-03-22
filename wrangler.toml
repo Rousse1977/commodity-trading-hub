@@ -1,0 +1,16 @@
+name = "commodity-trading-app"
+compatibility_date = "2023-12-01"
+
+[site]
+bucket = "./out"
+
+[build]
+command = "npm run build"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "commodity_trading_db"
+database_id = "commodity-trading-db"
+
+[env.production]
+workers_dev = false
